@@ -5,8 +5,8 @@ SPACE_IMAGE = pygame.image.load(os.path.join("./assets", "space.jpg"))
 RED_SPACESHIP_IMAGE = pygame.image.load(os.path.join("./assets", "spaceship_red.jpg"))
 YELLOW_SPACESHIP_IMAGE = pygame.image.load(os.path.join("./assets", "spaceship_yellow.jpg"))
 
-WIDTH = 600
-HEIGHT = 300
+WIDTH = 700
+HEIGHT = 400
 
 SPACESHIP_WIDTH = 55
 SPACESHIP_HEIGHT = 40
@@ -165,5 +165,6 @@ while running:
         yellow_handle_movement(keys_pressed, yellow)
         handle_bullets(yellow_bullets, red_bullets, yellow, red)
         draw_window(red, yellow, red_bullets, yellow_bullets, red_health, yellow_health)
+
 
 pygame.quit()
